@@ -557,7 +557,7 @@ export function allPrimitiveNames() {
   let OpenAPITypes = getOpenAPITypes();
   let ValuePrimitives = OpenAPITypes.map(type => `Value${capitalizeFirstChar(type)}`);
   let ValueArrayPrimitives = OpenAPITypes.map(type => `ValueArray${capitalizeFirstChar(type)}`);
-  let nonValuePrimitives = ['Decimals', 'EndTime', 'Precision', 'StartTime', 'Unit'];
+  let nonValuePrimitives = ['Decimals', 'EndTime', 'Precision', 'StartTime','Language','Aggregation', 'Unit'];
   let allPrimitives = new Set(ValuePrimitives.concat(ValueArrayPrimitives).concat(nonValuePrimitives));
   return allPrimitives;
 }
@@ -649,6 +649,8 @@ export function getSampleValueData() {
             EndTime: { order: 6, value: '' },
             Precision: { order: 4, value: '' },
             StartTime: { order: 5, value: '' },
+            Language:{ order: 7, value: '' },
+            Aggregation:{ order: 8, value: '' },
             Unit: { order: 2, value: '' },
             Value: { order: 1, value: '' } };
 }

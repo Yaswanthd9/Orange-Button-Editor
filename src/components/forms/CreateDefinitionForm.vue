@@ -369,7 +369,7 @@ export default {
         "OB Object Array": ("an array whose items are an OB object or element.<br>" +
                             "The array item is chosen when the array is defined.")
       };
-      info[this.OBTaxonomyElementDisplayName] = ("an object whose fields are primitives.<br>" + //: Value, Units, StartTime, EndTime, Decimals, and Precision.<br>" +
+      info[this.OBTaxonomyElementDisplayName] = ("an object whose fields are primitives.<br>" + //: Value, Units, StartTime, EndTime, Decimals,Language,Aggregation and Precision.<br>" +
                                                  "All primitives are strings except Value which is one of these OpenAPI types: boolean, integer, number, string, or array.<br>" +
                                                  "To define Value as an array, choose one of the other four types and check the 'Array' checkbox.");
       return info;
