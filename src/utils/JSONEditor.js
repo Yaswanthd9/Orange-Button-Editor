@@ -394,7 +394,7 @@ export function getObjChildren(refFile, defnName) {
   var superClassWhiteList = ["TaxonomyElementString", "TaxonomyElementNumber",
     "TaxonomyElementInteger", "TaxonomyElementBoolean"]
   // don't re-add primitives
-  var primitiveWhiteList = ["Value", "Unit", "Decimals", "Precision", "StartTime", "EndTime"]
+  var primitiveWhiteList = ["Value", "Unit", "Decimals", "Precision", "StartTime", "EndTime","Language","Aggregation"]
   let dependencies = []
 
   let defnObj = refFile[defnName]
